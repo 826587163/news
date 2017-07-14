@@ -1,0 +1,141 @@
+/* 头部导航 */
+ul{
+	height:40px;
+}
+ul>li{ 
+	list-style:none;
+	float:left;
+	margin-right:20px;
+	line-height:60px;
+
+}
+/* 轮播图 */
+#carousel-example-generic{
+	margin-top:50px;
+	margin-bottom:10px;
+}
+/* 街区新闻 */
+.bng5{
+	width:500px;
+	/* height: 300px; */
+}
+p{
+	font-size:16px;
+}
+#street-text{
+	margin-top:-20px;
+}
+.title-text{
+	font-size:20px;
+	color:gray;
+}
+.img-circle{
+	border:6px solid #ccc;
+}
+.little-text{
+	display:inline-block;
+}
+/* 图片尺寸修改 */
+.img{
+	width: 125px;
+}
+/* 街区活动 */
+/* 左滑块下面的div */
+.slide-left{
+	overflow:hidden;
+}
+.rig{
+	margin-top:355px;
+	margin-left:5px;
+}
+.hid{
+	width: 640px;
+	height: 355px;
+	/* margin-left:330px; */
+	margin-top:-355px;
+	background:black;
+	color:#fff;
+	line-height:355px;
+	display:none;
+	text-align:center;
+}
+.bng2{
+	width:600px;
+	height:180px;
+}
+
+.bng3{
+	width: 280px;
+	height: 180px;
+	margin-left:20px;
+}
+.bng4{
+	width:280px;
+	height:180px;
+}
+/* 右滑块DIV */
+.slide-right{
+	margin-top:-360px;
+}
+/* 右滑块1 */
+.hid2{
+	width: 560px;
+	height: 160px;
+	background:black;
+	margin-top:-170px;
+	margin-left:20px;
+	display:none;
+	margin-bottom:10px;
+	color:#fff;
+	text-align:center;
+	line-height:160px;
+}
+
+.slide1{
+	overflow:hidden;
+}
+.slide2{
+	overflow:hidden;
+}
+/* 右滑块2 */
+.hid3{
+	width: 280px;
+	height: 180px;
+	background:black;
+	margin-left: 20px;
+	margin-top:-180px;
+	display:none;
+	color:#fff;
+	text-align:center;
+	line-height:160px;
+}
+/* 右滑块3 */
+.slide3{
+	/* overflow:hidden; */
+	margin-top:-180px;
+	/* margin-left:305px; */
+	margin-left:280px;
+}
+.hid4{
+	width: 280px;
+	height: 180px;
+	background:black;
+	margin-left: 304px;
+	margin-top:-180px;
+	display:none;
+	color:#fff;
+	text-align:center;
+	line-height:180px;
+}
+/* 底部 */
+.footer{
+	color:#fff;
+	text-align:center;
+	line-height:60px;
+
+}
+/* container-fluid middle上移 */
+.middle{
+	padding-bottom:70px;
+}
+

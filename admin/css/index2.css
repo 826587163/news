@@ -1,0 +1,158 @@
+
+/* .top-ul>li{ 
+	list-style:none;
+	float:left;
+	margin-right:20px;
+	line-height:60px;
+	
+}
+.top-ul>li>a{
+	color:black;
+	text-decoration:none;
+} */
+/* .menu{
+	height: 120px;
+}
+.menu>li{
+	margin-top:5px;
+}
+.drop{
+	display:none;
+	float:right;
+	margin-top:-20px;
+} */
+/* 轮播图 */
+#carousel-example-generic{
+	margin-top:50px;
+	margin-bottom:10px;
+}
+/* 街区新闻 */
+.bng5{
+	width:100%;
+
+	height: 300px;
+}
+p{
+	font-size:16px;
+}
+#street-text{
+	margin-top:-20px;
+}
+.title-text{
+	font-size:20px;
+	color:gray;
+}
+.img-circle{
+	border:6px solid #ccc;
+}
+.little-text{
+	display:inline-block;
+}
+/* 图片尺寸修改 */
+.img{
+	width: 125px;
+}
+/* 街区活动 */
+/* 左滑块下面的div */
+.slide-left{
+	overflow:hidden;
+}
+/* .rig{
+	margin-top:355px;
+	margin-left:5px;
+} */
+.bng1{
+	width: 100%;
+}
+
+.hid {
+    width: 457px;
+    height: 254px;
+    /* margin-left: 330px; */
+    margin-top: -251px;
+    background: black;
+    color: #fff;
+    line-height: 254px;
+    display: none;
+    text-align: center;
+}
+.bng2{
+	width:100%;
+	height:127px;
+}
+
+.bng3{
+	width: 100%;
+	height: 127px;
+	margin-left:20px;
+}
+.bng4{
+	width:100%;
+	height:127px;
+	margin-left:-10%;
+}
+
+/* 右滑块1 */
+
+.hid2 {
+    width: 425px;
+    height: 126px;
+    background: black;
+    margin-top: -128px;
+    margin-left: 20px;
+    display: none;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 126px;
+}
+.slide1{
+	overflow:hidden;
+}
+.slide2{
+	overflow:hidden;
+	width: 100%;
+}
+/* 右滑块2 */
+.hid3 {
+    width: 200px;
+    height: 127px;
+    background: black;
+    margin-left: 15px;
+    margin-top: -128px;
+    display: none;
+    color: #fff;
+    text-align: center;
+    line-height: 127px;
+}
+/* 右滑块3 */
+.slide3{
+	overflow:hidden;
+	width: 100%;
+
+	/* margin-top:-180px;
+
+	margin-left:280px; */
+}
+.hid4 {
+    width: 213px;
+    height: 125px;
+    background: black;
+    /* margin-left: -4px; */
+    margin-top: -126px;
+    display: none;
+    color: #fff;
+    text-align: center;
+    line-height: 125px;
+}
+/* 底部 */
+.footer{
+	color:#fff;
+	text-align:center;
+	line-height:60px;
+
+}
+/* container-fluid middle上移 */
+.middle{
+	padding-bottom:70px;
+}

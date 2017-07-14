@@ -1,0 +1,14 @@
+.img>img{
+	width: 100%;
+}
+.img>h2{
+	margin-top:-3%;
+	margin-left:35%;
+	color:#fff;
+}
+.news-img{
+	width: 100%;
+}
+.list-group-item>h2{
+	color:#0099FF;
+}

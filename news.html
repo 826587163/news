@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="admin/css/news.css">
+	<link rel="stylesheet" href="admin/css/bootstrap.min.css">
+	<script type="text/javascript" src="admin/js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="admin/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="admin/js/news.js"></script>
+	<script type="text/javascript" src="admin/js/template-web.js"></script>
+	<script type="text/html" id="newsinfo">
+		   {{each data v i}}
+		       <li class="list-group-item">
+	                      <h2>{{v.content1}}</h2>
+						    <div class="row">
+						    	<div class="col-md-3">
+						    		<img src="images/{{v.content2}}" class="news-img">
+						    	</div>
+						    	<div class="col-md-9">
+						    		<p>{{v.content3}}</p>
+						    		<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+						    		{{v.content4}}
+						    	</div>
+						    </div>
+			    </li>
+		   {{/each}}	
+	</script>
+	<script type="text/javascript">
+			$(function(){
+				$.ajax({
+	                url: "news.php",
+	                type: "post",
+	                dataType:"json",
+	                success:function(data){                  
+	                    console.log(typeof data,":",data);
+	                    var htmlStr = template("newsinfo",{"data":data});
+                        $("#content").html(htmlStr);
+	                    
+	                }
+	            });
+			});
+	</script>
+</head>
+<body>
+    <!-- 头部 -->
+	 <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                         <img src="images/logo.png" style="margin-left:-30%">
+                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                       
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                       <ul class="nav navbar-nav navbar-right myurl">
+                                <li><a href="index2.html">首页<span class="sr-only">(current)</span></a></li>
+                                <li class="active"><a href="news.html">街区新闻</a></li>
+                                <li><a href="station.html">入驻机构</a></li>
+                                <li><a href="activity.html">街区活动</a></li>
+                          </ul>
+                    </div><!-- /.navbar-collapse -->
+             </div><!-- /.container-fluid -->
+    </nav>
+    <div class="row">
+    	<div class="col-md-12 img">
+    		<img src="images/liebiao_01.jpg">
+    		<h2>集聚创业服务&nbsp;&nbsp;&nbsp;孵化科技企业&nbsp;&nbsp;&nbsp;孕育创业文化</h2>
+    	</div>
+    </div>
+    <br>
+    <br>
+    <!-- 左边面板 -->
+    <div class="row">
+    	<div class="col-md-2 col-md-offset-2">
+    	   <div class="list-group">
+        		<a href="#" class="list-group-item active">
+		            <h4 class="list-group-item-heading">街区新闻</h4>
+		        </a>
+		        <a href="#" class="list-group-item">
+		            <h5 class="list-group-item-heading">街区新闻</h5>
+		        </a>
+		   </div>
+    	</div>
+    	<div class="col-md-6">
+    		 <!-- 中间主体内容 -->
+		    <ul class="list-group">
+				  <li class="list-group-item">首页 > 街区新闻</li>
+				  <div id="content">
+					  <!-- <li class="list-group-item">
+					      <h2>中关村创业者瞄准痛点抢占先机</h2>
+						    <div class="row">
+						    	<div class="col-md-3">
+						    		<img src="images/58abb87502963.jpg" class="news-img">
+						    	</div>
+						    	<div class="col-md-9">
+						    		<p>5月20日，北京市八一学校“八一创业营”的师生们在党委书记牛震云的带领下，来到中关村创业大街参观交流，近距离感受创新创业氛围。中关村创业大街相关负责人接待了“八一创业营”一行，并进行了详细讲解。“八一</p>
+						    		<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+						    		2017年03月15日
+						    	</div>
+						    </div>
+					  </li>
+					  <li class="list-group-item">
+	                      <h2>民革中央建言：搭建青年创业就业服务平台</h2>
+						    <div class="row">
+						    	<div class="col-md-3">
+						    		<img src="images/58abb87502963.jpg" class="news-img">
+						    	</div>
+						    	<div class="col-md-9">
+						    		<p>从北京中关村地铁口出来再走十分钟。远远就能看到“中关村创业大街”的牌匾。每天，无数怀揣着创业梦想的青年汇聚于此。在全面建成小康社会决胜阶段</p>
+						    		<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+						    		2017年03月13日
+						    	</div>
+						    </div>
+					  </li>
+					  <li class="list-group-item">
+					      <h2>经济参考报：法国创新企业为何青睐中国</h2>
+						    <div class="row">
+						    	<div class="col-md-3">
+						    		<img src="images/58abb87502963.jpg" class="news-img">
+						    	</div>
+						    	<div class="col-md-9">
+						    		<p>法国和中国的合作今年俩已经不在限于传统领域，开始探索技术创新领域方面的机会。而在创新合作方面，除了活跃着阿尔斯通、法国电力、施耐德等大企业的身影外，不少中小企业同样</p>
+						    		<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+						    		2017年03月9日
+						    	</div>
+						    </div>
+					  </li>
+					  <li class="list-group-item">
+					      <h2>人明日报：中关村创新方式助推原始创新</h2>
+						    <div class="row">
+						    	<div class="col-md-3">
+						    		<img src="images/58abb87502963.jpg" class="news-img">
+						    	</div>
+						    	<div class="col-md-9">
+						    		<p>中关村平均每天诞生十多家科技企业，究竟哪家企业拥有重大颠覆性原创核心技术？哪家企业具有新产业的领军潜力，将面向未来、前途无限？ 两会之前，手握创新创业核心密码的36家“中关村前沿技术企业”在北京首都</p>
+						    		<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+						    		2017年03月8日
+						    	</div>
+						    </div>
+					  </li> -->
+				</div>
+			</ul> 
+		</div>
+    </div>
+    
+</body>
+</html>
